@@ -1,0 +1,163 @@
+footer {
+    background: var(--background);
+    color: var(--on-background);
+
+    
+    &>.top {
+        border-top: 3px dashed var(--outline);
+        padding: 32px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        gap: 24px;
+        section{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            flex: 1 400px;
+
+        }
+        
+        .title{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 12px;
+            img{
+                height: 52px;
+            }
+            .icon{
+                background: #000;
+                color: #fff;
+                height: 52px;
+                aspect-ratio: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                font-size: 32px;
+            }
+            span {
+                font-size: 32px;
+                font-variation-settings: "wght" 1000, "wdth" 20;
+            }
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: stretch;
+            gap: 8px;
+            &>div{
+                padding: 16px;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: start;
+                align-items: center;
+                gap: 8px;
+                border-radius: 8px;
+                background: var(--surface);
+                color: var(--on-surface);
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 18px;
+
+                &:first-child {
+                    border-radius: 32px 32px 8px 8px;
+                }
+
+                &:last-child {
+                    border-radius: 8px 8px 32px 32px;
+                }
+                &:hover {
+                    background: var(--surface-container);
+                    color: var(--on-surface-container);
+                }
+
+                &:active {
+                    background: var(--error);
+                    color: var(--on-error);
+                    scale: 0.9;
+                    opacity: 0.5;
+                }
+                .icon{
+                    background: #000;
+                    color: #fff;
+                    height: 32px;
+                    aspect-ratio: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    &>.bottom {
+        border-top: 3px dashed var(--outline);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        padding: 32px;
+
+        .linkbar {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            gap: 8px;
+
+            &>div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: var(--surface);
+                color: var(--on-surface);
+                padding: 12px;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:first-child {
+                    border-radius: 32px 8px 8px 32px;
+                }
+
+                &:last-child {
+                    border-radius: 8px 32px 32px 8px;
+                }
+
+                &:hover {
+                    padding: 8px 32px;
+                    background: var(--surface-container);
+                    color: var(--on-surface-container);
+                }
+
+                &:active {
+                    background: var(--error);
+                    color: var(--on-error);
+                    scale: 0.9;
+                    opacity: 0.5;
+                }
+
+                svg {
+                    height: 30px;
+                }
+            }
+        }
+
+        .copyright{
+            span{
+                vertical-align: middle;
+            }
+        }
+    }
+}

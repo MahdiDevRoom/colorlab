@@ -1,0 +1,28 @@
+.c-title{
+    position: relative;
+    padding-left: 0.6em;
+    margin: 8px 0 20px 0;
+    display: inline-block;
+    &>.title{
+        font-size: 1.2em;
+        font-variation-settings: "wght" 1000;
+    }
+    &>.subtitle{
+        opacity: 0.7;
+        font-size: 0.9em;
+        font-variation-settings: "wght" 1000, "wdth" 10;
+    }
+
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0.2em;
+        height: 100%;
+        background: var(--scondary);
+        border-radius: 1em;
+    }
+
+}

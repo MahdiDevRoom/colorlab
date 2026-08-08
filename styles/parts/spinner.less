@@ -1,0 +1,31 @@
+main.spinner {
+    margin: 0;
+    padding: 40vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+
+        span {
+            width: 30px;
+            height: 30px;
+
+            &:nth-child(1) {
+                animation: spinner 1s 0s both infinite;
+            }
+            &:nth-child(2) {
+                animation: spinner 1s 0.25s both infinite;
+            }
+            &:nth-child(4) {
+                animation: spinner 1s 0.5s both infinite;
+            }
+            &:nth-child(3) {
+                animation: spinner 1s 0.75s both infinite;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+* {
+    font-family: "GoogleSansFlex";
+    box-sizing: border-box;
+    // user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    font-variation-settings:
+        "GRAD"48,
+        "ROND"0,
+        "opsz"0,
+        "slnt"0,
+        "wdth"100,
+        "wght"500;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    &::selection{
+        background: var(--scondary);
+        color: var(--on-scondary);
+    }
+}

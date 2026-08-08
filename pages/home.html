@@ -1,0 +1,90 @@
+<div id="cards">
+    <div id="logo-card">
+        <div class="logo">
+            <img src="assets/logos/ColorLabMasked/colorlab.masked.svg" alt="ColorLab">
+        </div>
+        <div class="title"> ColorLab </div>
+        <div class="subtitle"> A Lightweight Javascript Utility For Colors </div>
+        <div class="version"> v1.0.1 </div>
+    </div>
+    <div id="nav-card">
+        <div>
+            <div class="text"> Convert </div>
+            <div class="icon">
+                <div class="symbol">swap_horiz</div>
+            </div>
+        </div>
+        <div>
+            <div class="text"> Combine </div>
+            <div class="icon">
+                <div class="symbol">Blender</div>
+            </div>
+        </div>
+        <div>
+            <div class="text"> Harmony </div>
+            <div class="icon">
+                <div class="symbol"> palette </div>
+            </div>
+        </div>
+        <div>
+            <div class="text"> Shades </div>
+            <div class="icon">
+                <div class="symbol"> Gradient </div>
+            </div>
+        </div>
+        <div>
+            <div class="text"> Conterast </div>
+            <div class="icon">
+                <div class="symbol"> Visibility </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="home">
+    <section id="introduction">
+        <h1 class="c-title">
+            <div class="title"> ColorLab </div>
+            <div class="subtitle"> A Lightweight Javascript Utility For Colors </div>
+        </h1>
+        <p>
+            ColorLab.js is a <u class="c-underline">lightweight</u> script that provides color tools for designers, such
+            as color mixing and color harmonies.
+        </p>
+    </section>
+    <section id="install">
+        <h2 class="c-title">
+            <div class="title">Installation</div>
+        </h2>
+        <p>
+            To install, simply add the class code to your project, or <a download="ColorLab.js" class="c-link"
+                href="./dist/ColorLab.js"> download </a> the script and include it in your HTML document.
+        </p>
+
+        <pre><code class="hljs language-html">
+&lt;script src="path/to/colorlab.js">&lt;/scripts>
+        </code></pre>
+
+        <p> In JavaScript: </p>
+
+        <pre><code class="hljs language-js">
+const c = new ColorLab();
+
+c.toHex('Spring Green'); // '#00FF7F'
+c.toHsl('Spring Green'); // 'hsl(150 100% 50%)'
+c.toRgb('Spring Green'); // 'rgb(0 255 127)'
+c.toHsv('Spring Green'); // 'hsv(150 100% 100%)'
+c.toCmyk('Spring Green'); // 'cmyk(100% 0% 50% 0%)'
+
+c.isColor('b LU e vioLET'); // true
+c.normalize('b LU e vioLET'); // 'BlueViolet'
+
+c.mixColor('black','white'); // '#7F7F7F'
+        </code></pre>
+
+        <p> For the full documentation, click here. </p>
+
+        <button onclick="Page.open('docs')"> See Documents </button>
+    </section>
+
+</main>
